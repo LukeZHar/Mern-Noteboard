@@ -4,23 +4,15 @@ const router = express.Router();
 
 // Endpoints
 // Get all notes
-router.get("/", (req, res) => {
-  res.status(200).send("Here are your notes");
-});
+router.get("/", getAllNotes);
 
 // Create a new note
-router.post("/", (req, res) => {
-  res.status(201).json({ message: "Note created" });
-});
+router.post("/", createNote);
 
 // Update a note
-router.put("/:id", (req, res) => {
-  res.status(200).json({ message: `Note ${req.params.id} updated` });
-});
+router.put("/:id", updateNote);
 
 // Delete a note
-router.delete("/:id", (req, res) => {
-  res.status(200).json({ message: `Note ${req.params.id} deleted` });
-});
+router.delete("/:id", deleteNote);
 
 export default router;
