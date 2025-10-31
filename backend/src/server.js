@@ -13,12 +13,11 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5000",
+    origin: ["http://localhost:5000", "http://127.0.0.1:5173"],
   })
 );
 app.use(express.json());
 app.use(rateLimiter);
-
 
 // Simple request logger middleware
 app.use((req, res, next) => {
