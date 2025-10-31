@@ -6,7 +6,7 @@ import NoteDetailPage from './pages/NoteDetailPage.jsx'
 
 const App = () => {
   return (
-    <div>
+    <div data-theme="dracula">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
