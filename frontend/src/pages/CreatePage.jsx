@@ -46,7 +46,7 @@ const CreatePage = () => {
             <ArrowLeftIcon className='size-5' />
             Back to Home
           </Link>
-          <div className='card bg-case-100'>
+          <div className='card bg-case-100 border border-base-300 shadow-md'>
             <div className='card-body'>
               <h2 className='card-title text-2xl mb-4'>Create a New Note</h2>
               <form onSubmit={handleSubmit}>
